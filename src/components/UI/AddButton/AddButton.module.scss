@@ -1,0 +1,28 @@
+.button {
+	background-image: linear-gradient(to right, #232526 0%, #080808  51%, #232526  100%);
+
+	position: absolute;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	bottom: 4%;
+	left: 20px;
+	font-size: 35px;
+	line-height: 0.7;
+	padding: 10px 15px 15px 15px;
+	transition: 0.5s;
+	background-size: 200% auto;
+	color: white;
+	border-radius: 50% 0 50% 0;
+	
+
+	user-select: none;
+	&.active {
+		background-position: right center;
+		color: aqua;
+		text-decoration: none;
+		transform: rotate(180deg);
+	}
+}
+         
+       

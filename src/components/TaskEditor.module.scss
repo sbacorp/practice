@@ -1,0 +1,55 @@
+.editor{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-around;
+	margin: 150px auto 0 ;
+	width: 50%;
+	height: 40%;
+	&__title{
+		font-size: 34px;
+		color: aqua;
+		
+	}
+	
+}
+ul{
+	display: flex;
+}
+.task{
+	height: 200px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-between;
+}
+.task__status {
+	background: #314755;
+	padding: 4px;
+	border-radius: 3px;
+	position: relative;
+}
+
+.task__status input {
+	width: auto;
+	height: 100%;
+	appearance: none;
+	outline: none;
+	cursor: pointer;
+	padding: 4px 8px;
+	color: #bdbdbdbd;
+	font-size: 14px;
+	transition: all 100ms linear;
+}
+
+.task__status input:checked {
+	background:#0f1d1f;
+	color: #fff;
+}
+
+.task__status input:before {
+	content: attr(label);
+	display: inline-block;
+	text-align: center;
+	width: 100%;
+}
